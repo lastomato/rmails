@@ -1,0 +1,22 @@
+= rmails
+
+This is a tool for creating rails project with mongoid as the default ORM.
+
+== Notice
+
+* Please confirm that you have mongodb installed on your machine. If not, please visit (mongodb website)[http://www.mongodb.org] for instructions. If yes, please make sure mongod is running.
+* Only tested with Ubuntu 11.10 and 12.04 with rails 3.2.2 ~ 3.2.6, mongodb 2.06, mongoid 2.4.x
+
+== Usage
+
+Download shell script, then:
+
+    $ sh ./rmails.sh new <project name>
+
+== License
+
+MIT License
+
+== Copyright
+
+Copyright (c) Jie Fan.
