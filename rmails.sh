@@ -45,7 +45,7 @@ echo "${PINK}Done configuring mongoid, cleaning up...${NORMAL}"
 # stop using active_record
 sed -i "/require 'rails\/all'/s/^/#/" ./config/application.rb
 
-sed -i "4irequire 'action_controller/railtie'\nrequire 'action_mailer/railtie'\nrequire 'active_resource/railtie'\nrequire 'rails/test_unit/railtie'" ./config/application.rb
+sed -i "4irequire 'action_controller/railtie'\nrequire 'action_mailer/railtie'\nrequire 'active_resource/railtie'\nrequire 'rails/test_unit/railtie'\nrequire 'sprockets/railtie'" ./config/application.rb
 
 for file in config/application.rb config/environments/*.rb ;do
   sed -i "/[^#].*active_record.*/s/^/#/g" $file
